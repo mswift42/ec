@@ -1,5 +1,17 @@
-<p>
-  ec Works!
-</p>
+<md-toolbar color="primary">
+  <span>Egg crackin!</span>
+</md-toolbar>
+<md-sidenav-layout>
+  <md-sidenav #start (open)="mybutton.focus()">
+    Start Sidenav.
+    <br>
+    <!--<button md-button #mybutton (click)="start.close()">Close</button>-->
+  </md-sidenav>
+  <md-sidenav #end align="end">
+    End Sidenav.
+    <!--<button md-button (click)="end.close()">Close</button>-->
+  </md-sidenav>
+
+</md-sidenav-layout>
 
 <router-outlet></router-outlet>
